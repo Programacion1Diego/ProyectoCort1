@@ -46,4 +46,4 @@ Formato de entrega del proyecto: archivo .zip con el nombre: PROG1_APELLIDONOMBR
 ## *Si el proyecto esta sin diagrama de clases la nota es CERO, si el formato de entrega no es el adecuado se le resta una decima*
 
 
-- [ ]actualizar ventanas a oop con herencia
+- [ ] actualizar ventanas a oop con herencia
