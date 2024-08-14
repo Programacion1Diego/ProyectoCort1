@@ -10,17 +10,24 @@ import javax.swing.JPanel;
 
 public class PanelUpMain extends JPanel {
 	MoreButton button;
+	LabelStandar label = new LabelStandar();;
+
+	public LabelStandar getLabel() {
+		return label;
+	}
+
+	public void setLabel(LabelStandar label) {
+		this.label = label;
+	}
 
 	public PanelUpMain() {
 		JPanel panelUp = new JPanel();
-		LabelStandar label = new LabelStandar();
 		button = new MoreButton();
 		this.setLayout(new BorderLayout());
 		this.add(label, BorderLayout.CENTER);
 
 		this.setBackground(Color.red);
-		label.ponerTexto("hola");
-		label.setTamano(30);
+		
 		this.add(button, BorderLayout.WEST);
 	}
 

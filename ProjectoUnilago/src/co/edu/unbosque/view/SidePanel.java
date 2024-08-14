@@ -12,7 +12,7 @@ public class SidePanel extends JPanel{
 	RouterButton rou = new RouterButton();
 	public SidePanel() {
 		this.setBorder(new EmptyBorder(10, 5, 10, 10));
-		this.setLayout(new GridLayout(3,1));
+		this.setLayout(new GridLayout(4,1));
 		this.setBackground(Color.PINK);
 		this.setVisible(true);
 		this.add(cel);
