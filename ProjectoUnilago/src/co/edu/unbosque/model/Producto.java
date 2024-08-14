@@ -2,8 +2,8 @@ package co.edu.unbosque.model;
 
 public class Producto {
 	int numeroSerial;
-	String nombreProducto,marcaProducto,paisDeOrigen;
-	
+	String nombreProducto, marcaProducto, paisDeOrigen;
+
 	public Producto(int numeroSerial, String nombreProducto, String marcaProducto, String paisDeOrigen) {
 		super();
 		this.numeroSerial = numeroSerial;
@@ -11,7 +11,7 @@ public class Producto {
 		this.marcaProducto = marcaProducto;
 		this.paisDeOrigen = paisDeOrigen;
 	}
-	
+
 	public Producto() {
 		super();
 	}
@@ -53,8 +53,5 @@ public class Producto {
 		return "Producto [numeroSerial=" + numeroSerial + ", nombreProducto=" + nombreProducto + ", marcaProducto="
 				+ marcaProducto + ", paisDeOrigen=" + paisDeOrigen + "]";
 	}
-	
-	
-	
-	
+
 }

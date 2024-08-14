@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class  PanelUpMain extends JPanel {
+public class PanelUpMain extends JPanel {
 	MoreButton button;
 
 	public PanelUpMain() {
@@ -27,11 +27,11 @@ public class  PanelUpMain extends JPanel {
 	public void esconderPanel() {
 		this.setVisible(false);
 	}
-	
+
 	public boolean isStateButton() {
 		return button.isState();
 	}
-	
+
 	public void setStateButton(boolean state) {
 		button.setState(state);
 	}
@@ -43,6 +43,5 @@ public class  PanelUpMain extends JPanel {
 	public void setButton(MoreButton button) {
 		this.button = button;
 	}
-	
 
 }
