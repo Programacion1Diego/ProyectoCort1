@@ -10,18 +10,23 @@ public class Controller implements ActionListener {
 	Frame fame;
 	MainVentana ventana1;
 	public Controller() {
+		ventana1 = new MainVentana();
 		addLectures1();
 	}
 	
 	public void run() {
-		addLectures1();
+		
 		fame = new Frame();
+		fame.add(ventana1);
+		
+		//ventana1 = new MainVentana();
+		
 	}
 
 	public void addLectures1() {
 
-		fame.getVentana1().getUpMain().getButton().addActionListener(this);
-		//fame.getVentana1().getUpMain().getButton().setActionCommand("screen");
+		ventana1.getUpMain().getButton().addActionListener(this);
+		ventana1.getUpMain().getButton().setActionCommand("screen");
 
 	}
 
@@ -33,9 +38,7 @@ public class Controller implements ActionListener {
 			System.out.println("si");
 			break;
 		}
-		case "si":{
-			System.out.println("A");
-		}
+		
 	
 		}
 	}

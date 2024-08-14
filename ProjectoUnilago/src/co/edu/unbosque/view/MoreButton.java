@@ -9,13 +9,13 @@ import javax.swing.ImageIcon;
 
 public class MoreButton extends JButton  {
 	private boolean state = false;
+	
 	public MoreButton() {
 		
 		ImageIcon iconoBoton = new ImageIcon("61140.png");
 		this.setIcon(iconoBoton);
 		this.setContentAreaFilled(false);
 		this.setBorderPainted(false);
-		this.setActionCommand("si");
 		
 	}
 	

@@ -1,11 +1,12 @@
 package co.edu.unbosque.controller;
 
-import co.edu.unbosque.view.Frame;
-import co.edu.unbosque.view.MainVentana;
+import co.edu.unbosque.controller.Controller;
 
 public class AplMain {
 	public static void main(String[] args) {
-		Frame fame = new Frame();
+		Controller cn = new Controller();
+		cn.run();
+		
 		
 	}
 }
