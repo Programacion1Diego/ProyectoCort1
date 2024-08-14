@@ -32,7 +32,7 @@ Realizar un aplicativo que me permita administrar cada uno de estos productos en
 > todos los productos se pueden eliminar por el nombre del producto (Extra)
 ## Obligatorios
 
- - [ ] MVC
+ - [x] MVC
  - [ ] JAVA 22
  - [ ] Clases FACADE
  - [ ] Herencia
