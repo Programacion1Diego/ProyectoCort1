@@ -44,3 +44,6 @@ Realizar un aplicativo que me permita administrar cada uno de estos productos en
 Formato de entrega del proyecto: archivo .zip con el nombre: PROG1_APELLIDONOMBRE_APELLIDONOMBRE_APELLIDONOMBRE_APELLIDONOMBRE_PROYECTO1
 
 ## *Si el proyecto esta sin diagrama de clases la nota es CERO, si el formato de entrega no es el adecuado se le resta una decima*
+
+
+- [ ]actualizar ventanas a oop con herencia
