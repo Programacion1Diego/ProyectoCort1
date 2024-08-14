@@ -20,7 +20,7 @@ public class PanelUpMain extends JPanel {
 
 		this.setBackground(Color.red);
 		label.ponerTexto("hola");
-		label.setTamano(50);
+		label.setTamano(30);
 		this.add(button, BorderLayout.WEST);
 	}
 

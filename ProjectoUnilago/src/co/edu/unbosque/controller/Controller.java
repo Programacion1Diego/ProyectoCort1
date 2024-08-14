@@ -29,14 +29,44 @@ public class Controller implements ActionListener {
 		ventana1.getUpMain().getButton().addActionListener(this);
 		ventana1.getUpMain().getButton().setActionCommand("screen");
 
+		ventana1.getPanelSide().setVisible(false);
+		
+		ventana1.getPanelSide().getCel().addActionListener(this);
+		ventana1.getPanelSide().getCel().setActionCommand("cel");
+		
+		ventana1.getPanelSide().getComp().addActionListener(this);
+		ventana1.getPanelSide().getComp().setActionCommand("comp");
+		
+		ventana1.getPanelSide().getRou().addActionListener(this);
+		ventana1.getPanelSide().getRou().setActionCommand("rou");;
+		
+		
+
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		switch (e.getActionCommand()) {
 		case "screen": {
-
-			System.out.println("si");
+			if (ventana1.getUpMain().getButton().isState()) {
+				ventana1.getPanelSide().setVisible(false);
+				ventana1.getUpMain().getButton().setState(false);
+			}else {
+				ventana1.getPanelSide().setVisible(true);
+				ventana1.getUpMain().getButton().setState(true);
+			}
+			break;
+		}
+		case "rou":{
+			ventana1.setVisible(false);
+			break;
+		}
+		case "cel":{
+			ventana1.setVisible(false);
+			break;
+		}
+		case "comp":{
+			ventana1.setVisible(false);
 			break;
 		}
 

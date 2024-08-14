@@ -7,8 +7,9 @@ import javax.swing.JLabel;
 public class LabelStandar extends JLabel{
 
 	public LabelStandar() {
-		this.setFont(new Font("impact",Font.BOLD,100));
+		this.setFont(new Font("impact",Font.BOLD,5));
 		this.setHorizontalAlignment(CENTER);
+		
 	}
 	
 	public void ponerTexto(String text) {
@@ -18,6 +19,8 @@ public class LabelStandar extends JLabel{
 	public void setTamano(int tamano) {
 		this.setFont(new Font("impact",Font.BOLD,tamano));
 	}
+	
+	
 	
 
 }
