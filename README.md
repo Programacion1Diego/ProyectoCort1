@@ -47,3 +47,4 @@ Formato de entrega del proyecto: archivo .zip con el nombre: PROG1_APELLIDONOMBR
 
 
 - [ ] actualizar ventanas a oop con herencia
+- [ ] ModelFacade ViewFacade
