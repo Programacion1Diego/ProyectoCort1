@@ -32,16 +32,22 @@ public class VentanaCelular extends JPanel{
 		upIndex.getLabel().setTamano(20);
 		
 	//sur	
-	JPanel pBot = new JPanel(new GridBagLayout());
+	JPanel pBot = new JPanel(new GridLayout(1,5));
+	JPanel empty = new JPanel();
 	pBot.setBackground(Color.darkGray);
-	pBot.setBorder(new EmptyBorder(0, 60, 0, 60));
+	pBot.setBorder(new EmptyBorder(10, 60, 10, 60));
+	
+	empty.setBackground(Color.darkGray);
 	
 	
 	JButton bProcesar = new JButton("Procesar");
 	pBot.add(bProcesar);
 	
+	pBot.add(empty);
+	
 	JButton bSalir = new JButton("Salir");
 	pBot.add(bSalir);
+	
 	
 	this.add(pBot, BorderLayout.SOUTH);
 	
@@ -53,7 +59,7 @@ public class VentanaCelular extends JPanel{
 	
 	GridBagConstraints reg = new GridBagConstraints();
 	
-	reg.gridx = 0;
+	reg.gridx = 0; 
 	reg.gridy = 0;
 	reg.gridwidth = 0;
 	reg.gridheight= 0;
@@ -78,6 +84,7 @@ public class VentanaCelular extends JPanel{
 	reg.gridwidth = 0;
 	reg.gridheight= 0;
 	JLabel lMarca = new JLabel("Marca: ");
+	lMarca.setForeground(Color.white);
 	pPanelForm.add(lMarca, reg);
 	this.add(pPanelForm);
 	
@@ -97,6 +104,8 @@ public class VentanaCelular extends JPanel{
 	reg.gridwidth = 0;
 	reg.gridheight= 0;
 	JLabel lPais = new JLabel("Pais de Origen: ");
+	lPais.setForeground(Color.white);
+	
 	pPanelForm.add(lPais, reg);
 	this.add(pPanelForm);
 	
@@ -135,6 +144,7 @@ public class VentanaCelular extends JPanel{
 	reg.gridwidth = 0;
 	reg.gridheight= 0;
 	JLabel lMemoria = new JLabel("Memoria: ");
+	lMemoria.setForeground(Color.white);
 	pPanelForm.add(lMemoria, reg);
 	this.add(pPanelForm);
 	
