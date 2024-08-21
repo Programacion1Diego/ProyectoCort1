@@ -1,0 +1,220 @@
+package co.edu.unbosque.view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.Image;
+
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
+
+public class VentanaCelular extends JPanel{
+	
+	boolean thisInMemory = false;
+	PanelUpMain upIndex = new PanelUpMain();
+	SidePanel sideP = new SidePanel();
+	
+	public VentanaCelular() {
+		this.setLayout(new BorderLayout());
+		this.add(sideP,BorderLayout.WEST);
+		this.add(upIndex,BorderLayout.NORTH);
+		upIndex.getLabel().ponerTexto("Pantalla de Manejo de Celulares");
+		upIndex.getLabel().setTamano(20);
+		
+	//sur	
+	JPanel pBot = new JPanel();
+	pBot.setLayout(new GridLayout(1,4));
+	
+	pBot.setBackground(Color.darkGray);
+	pBot.setBorder(new EmptyBorder(0, 60, 0, 60));
+	pBot.setBorder(new EmptyBorder(10,10,10,10));
+	
+	
+	JButton bProcesar = new JButton("Procesar");
+	bProcesar.setBorder(new EmptyBorder(10,10,10,10));
+	pBot.add(bProcesar);
+	JPanel empty = new JPanel();
+	
+	pBot.add(empty);
+	
+	
+	JButton bSalir = new JButton("Salir");
+	bSalir.setBorder(new EmptyBorder(10,10,10,10));
+	pBot.add(bSalir);
+	
+	this.add(pBot, BorderLayout.SOUTH);
+	
+	//Centro 
+	JPanel pPanelForm = new JPanel(new GridLayout(7, 1, 10,60));
+	pPanelForm.setBorder(javax .swing.BorderFactory.createEmptyBorder());
+	pPanelForm.setBackground(Color.decode("#2596be"));
+	pPanelForm.setBounds(50, 25, 45, 15);
+	
+	
+	GridBagConstraints reg = new GridBagConstraints();
+	
+	reg.gridx = 0;
+	reg.gridy = 0;
+	reg.gridwidth = 0;
+	reg.gridheight= 0;
+	JLabel lNom = new JLabel("Nombre: ");
+	pPanelForm.add(lNom, reg);
+	this.add(pPanelForm);
+	
+	reg.gridx = 1;
+	reg.gridy = 2;
+	reg.gridwidth = 2;
+	reg.gridheight = 2;
+	reg.weightx = 0.0;
+	JTextField nom = new JTextField((10));
+	nom.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+	pPanelForm.add(lNom);
+	pPanelForm.add(nom);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 0;
+	reg.gridwidth = 0;
+	reg.gridheight= 0;
+	JLabel lMarca = new JLabel("Marca: ");
+	lMarca.setForeground(Color.WHITE);
+	pPanelForm.add(lMarca, reg);
+	this.add(pPanelForm);
+	
+	reg.gridx = 1;
+	reg.gridy = 3;
+	reg.gridwidth = 2;
+	reg.gridheight = 1;
+	reg.weightx = 1.0;
+	JTextField mar = new JTextField((10));
+	mar.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+	mar.setDisabledTextColor(Color.WHITE);
+	pPanelForm.add(lMarca);
+	pPanelForm.add(mar);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 0;
+	reg.gridwidth = 0;
+	reg.gridheight= 0;
+	JLabel lPais = new JLabel("Pais de Origen: ");
+	pPanelForm.add(lPais, reg);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 2;
+	reg.gridwidth = 1;
+	reg.gridheight = 1;
+	reg.weightx = 1.0;
+	JTextField pais = new JTextField((10));
+	pais.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+	pPanelForm.add(lPais);
+	pPanelForm.add(pais);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 0;
+	reg.gridwidth = 0;
+	reg.gridheight= 0;
+	JLabel lnumS = new JLabel("Numero de Serie: ");
+	pPanelForm.add(lnumS, reg);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 3;
+	reg.gridwidth = 2;
+	reg.gridheight = 2;
+	reg.weightx = 1.0;
+	JTextField numS = new JTextField((10));
+	numS.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+	pPanelForm.add(lnumS);
+	pPanelForm.add(numS);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 0;
+	reg.gridwidth = 0;
+	reg.gridheight= 0;
+	JLabel lMemoria = new JLabel("Memoria: ");
+	pPanelForm.add(lMemoria, reg);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 4;
+	reg.gridwidth = 3;
+	reg.gridheight = 3;
+	reg.weightx = 1.0;
+	JTextField memo = new JTextField((10));
+	numS.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+	pPanelForm.add(lMemoria);
+	pPanelForm.add(memo);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 0;
+	reg.gridwidth = 0;
+	reg.gridheight= 0;
+	JLabel lSistemaO = new JLabel("Sistema Operativo: ");
+	pPanelForm.add(lSistemaO, reg);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 4;
+	reg.gridwidth = 3;
+	reg.gridheight = 3;
+	reg.weightx = 1.0;
+	JTextField sistemaO= new JTextField((10));
+	numS.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+	pPanelForm.add(lSistemaO);
+	pPanelForm.add(sistemaO);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 0;
+	reg.gridwidth = 0;
+	reg.gridheight= 0;
+	JLabel lNfc = new JLabel("Nfc: ");
+	pPanelForm.add(lNfc, reg);
+	this.add(pPanelForm);
+	
+	reg.gridx = 0;
+	reg.gridy = 3;
+	reg.gridwidth = 4;
+	reg.gridheight = 2;
+	reg.weightx = 1.0;
+	JTextField nfc = new JTextField((10));
+	numS.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+	pPanelForm.add(lNfc);
+	pPanelForm.add(nfc);
+	this.add(pPanelForm);
+	
+	}
+	public boolean isThisInMemory() {
+		return thisInMemory;
+	}
+	public void setThisInMemory(boolean thisInMemory) {
+		this.thisInMemory = thisInMemory;
+	}
+	public PanelUpMain getUpIndex() {
+		return upIndex;
+	}
+	public void setUpIndex(PanelUpMain upIndex) {
+		this.upIndex = upIndex;
+	}
+	public SidePanel getSideP() {
+		return sideP;
+	}
+	public void setSideP(SidePanel sideP) {
+		this.sideP = sideP;
+	}	
+
+}

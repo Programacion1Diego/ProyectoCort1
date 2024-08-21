@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.security.cert.CRLSelector"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.model.Producto"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.persistence.CrudOperation"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.beans.PersistenceDelegate"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.model.Celular"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="java.awt.Image"/>
+    <fullyQualifiedTypeName name="java.awt.Frame"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.view.PanelUpMain"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="java.awt.Font"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.view.LabelStandar"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.view.MoreButton"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.view.InterfaceGuiDTO"/>
+    <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+    <fullyQualifiedTypeName name="java.lang.Appendable"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.controller.Controller"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.view.MainVentana"/>
+    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.view.SidePanel"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.view.ComputerButton"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.view.RouterButton"/>
+    <fullyQualifiedTypeName name="co.edu.unbosque.view.VentanaComputador"/>
+    <fullyQualifiedTypeName name="javax.swing.border.EmptyBorder"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+</qualifiedTypeNameHistroy>
